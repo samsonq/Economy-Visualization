@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>DSC106 - HW5 ZingCharts Demo</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Paytone+One&display=swap" rel="stylesheet" />
+	<link href="./styles/dashboard.css" rel="stylesheet" />
+	<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+	<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/mapdata/custom/world-continents.js"></script>
+    <script src="./scripts/main.js"></script>
+</head>
+
+<body>
+	<h1><img src="./images/kf-logo.png" alt="Dingus & Widget" height="50" width="150" />Global Dashboard</h1>
+
+	<section>
+		<div id="myMap"> </div>
+	</section>
+
+	<section id="vitalScorecards">
+		<section id="salesScorecard">
+			<h3>Sales</h3>
+			<output id="totalSales"> </output>
+		</section>
+		<section id="dingusScorecard">
+			<h3>Knife</h3>
+			<output id="dingusSold"> </output>
+		</section>
+
+		<section id="widgetScorecard">
+			<h3>Fork</h3>
+			<output id="widgetSold"> </output>
+		</section>	
+	</section>
+
+	<hr />
+
+	<section id="summaryCharts" class="chart-parent--container">
+		<section id="salesPerMonthChart" class="chart--container"></section>
+		<section id="totalSalesChart" class="chart--container"></section>
+	</section>
+
+	<hr />
+
+	<section id="stockChart"></section>
+
+</body>
+
+</html>
