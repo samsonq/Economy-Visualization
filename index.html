@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>DSC 106 Project - Economy Visualization</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Paytone+One&display=swap" rel="stylesheet" />
-	<link href="./styles/dashboard.css" rel="stylesheet" />
-</head>
-
-<body>
-	<section id="intro">
-        <div>
-            <h1>The Macroeconomic Impact of COVID-19 on the United States</h1>
-        </div>
-		<h3>created by Samson Qian</h3>
-		<p>For the purpose of analyzing the economic impact of the pandemic, we will use April 2020 as a point where the pandemic rapidly spread throughout country and began to cause impacts.</thead></p>
-	<hr/>
-    </section>
-	<div id="flavorsText">
-		<h2>National Unemployment</h2>
-		<p>In 2019, unemployment rates were fairly steady and uniform across the country. Once the pandemic hit and spread in April 2020, unemployment increased dramatically, tripling and quadrupling across the states. This impact is larger in areas of higher population and business activity including the western area of California and the northern area of New York.</p>
-	</div>
-	<iframe width="825" height="800" frameborder="0" scrolling="no" src="//plotly.com/~samsonqian/4.embed"></iframe>
-	<iframe width="825" height="800" frameborder="0" scrolling="no" src="//plotly.com/~samsonqian/7.embed"></iframe>
-
-	<hr/>
-	<h2>GDP (Gross Domestic Product)</h2>
-	<p>The US GDP was on the constant rise from 2018-2019 and peaked at the advent of the coronavirus. Once the pandemic spread and impacted various industries, GDP took a sharp drop around April 2020 where it hit its lowest point. However, the economy is slowly rising again and has regained 2/3 of its original value.</p>
-	<iframe id="igraph" scrollingsd dolar="no" style="border:none;" seamless="seamless" src="https://plotly.com/~samsonqian/1.embed" height="525" width="100%"></iframe>
-
-	<hr/>
-	<h2>Foreign Exchange Rates to USD</h2>
-	<p>Because of the increase in unemployment, the United States government has took actions to protect American business by increasing tarrifs and promoting domestic business. These actions have strengthened the value of the US dollar and increased its value in comparison to other international currencies. Because of this appreciation, the ForEx rate of other to currencies to USD has gradually decreased.</p>
-	<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~samsonqian/12.embed" height="525" width="100%"></iframe>
-	<hr/>
-	<h2>Total Industry Production by Country in 2020</h2>
-	<p>Total production by major industries internationally have varied across time throughout the pandemic, with production decreasing at the start and height of the pandemic and slowly increasing months after the peak to regain its former production levels.</p>
-	<img src="./images/newplot.png" alt="Heatmap">
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-</body>
-
+    <head>
+        <meta charset="UTF-8">
+        <title>Economy Visualization</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat%7CPaytone+One&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Paytone+One&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+		<header id="header">
+			<nav>
+				<ul>
+					<li><a href="#title">Title</a></li>
+					<li><a href="#unemployment">Unemployment</a></li>
+					<li><a href="#gdp">GDP</a></li>
+					<li><a href="#forex">Foreign Exchange</a></li>
+					<li><a href="#industry">Industry Production</a></li>
+					<li><a href="#summary">Summary</a></li>
+					
+				</ul>
+			</nav>
+		</header>
+		<br>
+		<br>
+		<section id="title">
+        <h2>The Macroeconomic Impact of COVID-19 on the United States</h2>
+        <p>For the purpose of analyzing the economic impact of the pandemic, we will use April 2020 as a point where the pandemic rapidly spread throughout country and began to cause impacts.
+		</p>
+		</section>
+        <hr>
+		<section id="unemployment">
+		<div id="flavorsText">
+			<h2>National Unemployment</h2>
+			<p>In 2019, unemployment rates were fairly steady and uniform across the country. Once the pandemic hit and spread in April 2020, unemployment increased dramatically, tripling and quadrupling across the states. This impact is larger in areas of higher population and business activity including the western area of California and the northern area of New York.</p>
+		</div>
+		<iframe width="825" height="800" frameborder="0" scrolling="no" src="//plotly.com/~samsonqian/4.embed"></iframe>
+		<iframe width="825" height="800" frameborder="0" scrolling="no" src="//plotly.com/~samsonqian/7.embed"></iframe>
+		</section>
+		<hr>
+		<section id="gdp">
+		<h2>GDP (Gross Domestic Product)</h2>
+		<p>The US GDP was on the constant rise from 2018-2019 and peaked at the advent of the coronavirus. Once the pandemic spread and impacted various industries, GDP took a sharp drop around April 2020 where it hit its lowest point. However, the economy is slowly rising again and has regained 2/3 of its original value.</p>
+		<iframe id="igraph" scrollingsd dolar="no" style="border:none;" seamless="seamless" src="https://plotly.com/~samsonqian/1.embed" height="525" width="100%"></iframe>
+		</section>
+		<hr>
+		<section id="forex">
+        <h2>Foreign Exchange Rates to USD</h2>
+		<p>Because of the increase in unemployment, the United States government has took actions to protect American business by increasing tarrifs and promoting domestic business. These actions have strengthened the value of the US dollar and increased its value in comparison to other international currencies. Because of this appreciation, the ForEx rate of other to currencies to USD has gradually decreased.</p>
+		<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~samsonqian/12.embed" height="525" width="100%"></iframe>
+		</section>
+		<hr>
+		<section id="industry">
+		<h2>Total Industry Production by Country in 2020</h2>
+		<p>Total production by major industries internationally have varied across time throughout the pandemic, with production decreasing at the start and height of the pandemic and slowly increasing months after the peak to regain its former production levels.</p>
+		<img src="./images/newplot.png" alt="Heatmap">
+		</section>
+		<hr>
+		<section id="summary">
+		<h2>Summary</h2>
+		<p>For the purpose of analyzing the economic impact of the pandemic, we will use April 2020 as a point where the pandemic rapidly spread throughout country and began to cause impacts.
+		</p>
+		</section>
+		<br>
+		<br>
+	</body>
+    <footer>
+        <p>Created by Samson Qian.</p>
+    </footer>
 </html>
